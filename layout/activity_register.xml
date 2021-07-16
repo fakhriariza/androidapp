@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="Register"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Nama"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="#80000000"
+            android:textColorHint="#800C0B0B" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textColor="#80000000"
+            android:textColorHint="#800C0B0B" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/ethp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Nomor Handphone"
+            android:padding="8dp"
+            android:textColor="#80000000"
+            android:textColorHint="#800C0B0B" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etinstitusi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Institusi"
+            android:padding="8dp"
+            android:textColor="#80000000"
+            android:textColorHint="#800C0B0B" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="#80000000"
+            android:textColorHint="#800C0B0B" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etkode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Masukan Kode Registrasi"
+            android:padding="8dp"
+            android:textColor="#80000000"
+            android:textColorHint="#800C0B0B" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="300dp"
+        android:layout_height="41.89dp"
+        android:layout_below="@+id/btn"
+        android:background="@drawable/recbtn"
+        android:onClick="btnSaveClick"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
